@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classy Clay's Catering | Progress Update</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="course">IS 4880 Capstone Project</p>
+      <h1>Classy Clay's Catering Progress Update</h1>
+      <p class="subtitle">
+        Catering Connect Solutions: Group 5
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Project Manager Summary</h2>
+      <p>
+        This progress update documents the current direction of the Classy Clay's Catering prototype.
+        The project is focused on creating a simple no-code/low-code system that supports request tracking,
+        menu management, AI-assisted follow-up drafts, marketing content support, and repeat customer engagement.
+      </p>
+      <p>
+        The prototype is designed to support existing systems like Owner.com and Square instead of replacing them.
+        Square will continue to handle final estimates, invoices, and payments. Our system focuses on the gaps
+        identified during the client interview: better intake details, less back-and-forth communication,
+        customer tracking, and marketing consistency.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="metric">
+        <h3>5</h3>
+        <p>Team Members</p>
+      </div>
+      <div class="metric">
+        <h3>5</h3>
+        <p>Core Tables</p>
+      </div>
+      <div class="metric">
+        <h3>8</h3>
+        <p>Order Statuses</p>
+      </div>
+      <div class="metric">
+        <h3>6</h3>
+        <p>Known Blockers</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Team Assignments</h2>
+      <div class="table-wrapper">
+        <table id="teamTable">
+          <thead>
+            <tr>
+              <th>Team Member</th>
+              <th>Role</th>
+              <th>Current Assignment</th>
+              <th>Contribution</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Current Data Model</h2>
+      <p>
+        The prototype data model is organized around the major business objects needed for the system:
+        customers, requests/orders, menu items, AI drafts, and marketing campaigns.
+      </p>
+
+      <div id="dataModel" class="accordion"></div>
+    </section>
+
+    <section class="card">
+      <h2>Menu Management Progress</h2>
+      <p>
+        The menu management section will allow the owner to view and update menu items, prices, categories,
+        and active/inactive status. This supports future estimate generation while keeping the system simple.
+      </p>
+
+      <div class="table-wrapper">
+        <table id="menuTable">
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Category</th>
+              <th>Base Price</th>
+              <th>Price Type</th>
+              <th>Serving Size</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Order Intake Progress</h2>
+      <p>
+        The order intake process is being designed to collect more complete information up front.
+        This should reduce repeated follow-up and help the owner identify whether a request is standard,
+        custom, or missing important details.
+      </p>
+
+      <div class="status-list" id="statusList"></div>
+    </section>
+
+    <section class="card">
+      <h2>Issues and Blockers</h2>
+      <p>
+        These blockers need to be resolved before the prototype can be completed.
+      </p>
+
+      <div id="blockers" class="blocker-list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Next Steps</h2>
+      <ol id="nextSteps"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prepared by Emanuel Portugal | Project Manager | Catering Connect Solutions</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
