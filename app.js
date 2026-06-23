@@ -122,571 +122,68 @@ const dataModel = [
 ];
 
 const menuItems = [
-  // Most Ordered / Popular Items
   {
-    name: "Chicken Dinner",
-    category: "Most Ordered",
-    price: "$12.99",
+    name: "Sweet & Spicy Meatballs",
+    category: "Starter",
+    price: "$65.00",
     type: "Fixed",
-    serving: "1 person",
+    serving: "TBD",
     active: "Yes"
   },
   {
-    name: "Crazy Fries",
-    category: "Most Ordered",
-    price: "$5.49",
+    name: "60ct Wings",
+    category: "Starter",
+    price: "$75.00",
     type: "Fixed",
-    serving: "1 person",
+    serving: "TBD",
     active: "Yes"
   },
   {
-    name: "2pc Chicken Tenders",
-    category: "Most Ordered",
-    price: "$5.29",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "50 Ct Wings",
-    category: "Most Ordered / Family Meals",
-    price: "$60.00",
-    type: "Fixed",
-    serving: "Group order",
-    active: "Yes"
-  },
-
-  // Snacks & Small Plates
-  {
-    name: "Lays - Chips",
-    category: "Snacks & Small Plates",
-    price: "$2.00",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "6pc Wings and Fries",
-    category: "Snacks & Small Plates",
-    price: "$9.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "5 Pc Garlic Parmesan Ranch Dry Wings",
-    category: "Snacks & Small Plates",
-    price: "$5.00",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Fish & Fries",
-    category: "Snacks & Small Plates",
-    price: "$7.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Entrees
-  {
-    name: "Chicken Tenders",
+    name: "Baked Chicken",
     category: "Entree",
-    price: "$10.99",
+    price: "$75.00",
     type: "Fixed",
-    serving: "1 person",
+    serving: "TBD",
     active: "Yes"
   },
   {
-    name: "8 Count Wings",
+    name: "Blackened Salmon",
     category: "Entree",
-    price: "$12.99",
+    price: "$110.00",
     type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Cheeseburger",
-    category: "Entree",
-    price: "$10.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Salmon",
-    category: "Entree",
-    price: "$15.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Fish Sandwich with Fries",
-    category: "Entree",
-    price: "$10.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "2pc Fish Plate",
-    category: "Entree",
-    price: "$15.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "BLT with One Side",
-    category: "Entree",
-    price: "$7.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "8 Count Butterfly Shrimp",
-    category: "Entree",
-    price: "$10.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Pork Chop",
-    category: "Entree",
-    price: "$15.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Crispy Chicken Club",
-    category: "Entree",
-    price: "$10.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Veggie Plate",
-    category: "Entree",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Country Fried Steak",
-    category: "Entree",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Pastas
-  {
-    name: "Tuscan Pasta",
-    category: "Pastas",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Cajun Pasta",
-    category: "Pastas",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Jerk Pasta",
-    category: "Pastas",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Shrimp and Broccoli",
-    category: "Pastas",
-    price: "$16.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Chicken and Broccoli",
-    category: "Pastas",
-    price: "$15.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Salads
-  {
-    name: "Garden Salad",
-    category: "Salads",
-    price: "$7.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Cobb Salad",
-    category: "Salads",
-    price: "$7.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Greek Salad",
-    category: "Salads",
-    price: "$7.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Caesar Salad",
-    category: "Salads",
-    price: "$7.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Sides
-  {
-    name: "French Fries",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
+    serving: "TBD",
     active: "Yes"
   },
   {
     name: "Green Beans",
-    category: "Sides",
-    price: "$4.99",
+    category: "Side",
+    price: "$55.00",
     type: "Fixed",
+    serving: "TBD",
+    active: "Yes"
+  },
+  {
+    name: "Baked Macaroni & Cheese",
+    category: "Side",
+    price: "$65.00",
+    type: "Fixed",
+    serving: "TBD",
+    active: "Yes"
+  },
+  {
+    name: "Cajun Pasta",
+    category: "Pasta",
+    price: "$55.99+",
+    type: "Starting Price",
+    serving: "TBD",
+    active: "Yes"
+  },
+  {
+    name: "Lunch Box",
+    category: "Lunch Box",
+    price: "$9.00-$12.00",
+    type: "Price Range",
     serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Broccoli",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Seasoned Yellow Rice",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Side Salad",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Mac n Cheese",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Fried Okra",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Hush Puppies",
-    category: "Sides",
-    price: "$3.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Collard Greens",
-    category: "Sides",
-    price: "$4.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Family Meals / Catering-Sized Items
-  {
-    name: "8pc Chicken with 2 Large Sides",
-    category: "Family Meals",
-    price: "$29.99",
-    type: "Fixed",
-    serving: "Family meal",
-    active: "Yes"
-  },
-  {
-    name: "Half Pan Cajun Chicken Pasta with Salad and Bread Stick",
-    category: "Family Meals / Catering",
-    price: "$55.99",
-    type: "Fixed",
-    serving: "Half pan; approx. 8-12 people",
-    active: "Yes"
-  },
-  {
-    name: "Half Pan Shrimp and Salmon Pasta with Salad and 6 Breadsticks",
-    category: "Family Meals / Catering",
-    price: "$75.99",
-    type: "Fixed",
-    serving: "Half pan; approx. 8-12 people",
-    active: "Yes"
-  },
-  {
-    name: "8 Ct Pork Chop Meal",
-    category: "Family Meals",
-    price: "$55.99",
-    type: "Fixed",
-    serving: "Group order",
-    active: "Yes"
-  },
-
-  // Drinks
-  {
-    name: "Bottle Water",
-    category: "Drinks",
-    price: "$1.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Bottled Coke",
-    category: "Drinks",
-    price: "$2.79",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Bottled Sprite",
-    category: "Drinks",
-    price: "$2.79",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Bottled Diet Coke",
-    category: "Drinks",
-    price: "$2.79",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Minute Maid",
-    category: "Drinks",
-    price: "$2.79",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Bottled Tea",
-    category: "Drinks",
-    price: "$2.79",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Hot Cup Coffee",
-    category: "Drinks",
-    price: "$1.59",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "House Lemonade",
-    category: "Drinks",
-    price: "$2.79",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Add-Ons
-  {
-    name: "Extra Cheese",
-    category: "Add-On",
-    price: "$0.50",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Wing",
-    category: "Add-On",
-    price: "$1.50",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Protein",
-    category: "Add-On",
-    price: "$5.00",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Additional Bread",
-    category: "Add-On",
-    price: "$1.00",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Chicken Tender",
-    category: "Add-On",
-    price: "$1.50",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Fish",
-    category: "Add-On",
-    price: "$3.00",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Extra Sauce",
-    category: "Add-On",
-    price: "$0.50",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-  {
-    name: "Chicken Pieces",
-    category: "Add-On",
-    price: "$3.00",
-    type: "Fixed",
-    serving: "Add-on",
-    active: "Yes"
-  },
-
-  // Desserts
-  {
-    name: "Homemade Cake",
-    category: "Desserts",
-    price: "$5.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Combo Meals
-  {
-    name: "Cheeseburger Combo",
-    category: "Combo Meal",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Fish Sandwich Combo",
-    category: "Combo Meal",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Crispy Chicken Club Combo",
-    category: "Combo Meal",
-    price: "$12.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Whole Wings Combo",
-    category: "Combo Meal",
-    price: "$14.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Wing Combo",
-    category: "Combo Meal",
-    price: "$14.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-  {
-    name: "Pasta Combo",
-    category: "Combo Meal",
-    price: "$15.99",
-    type: "Fixed",
-    serving: "1 person",
-    active: "Yes"
-  },
-
-  // Catering Rules / Service Fees
-  {
-    name: "Catering Deposit",
-    category: "Catering Policy",
-    price: "50%",
-    type: "Deposit",
-    serving: "Required at time of order",
-    active: "Yes"
-  },
-  {
-    name: "Delivery Fee Within 15 Miles",
-    category: "Catering Policy",
-    price: "$35.00",
-    type: "Delivery Fee",
-    serving: "Within 15 miles",
-    active: "Yes"
-  },
-  {
-    name: "Delivery Fee Over 15 Miles",
-    category: "Catering Policy",
-    price: "Additional fee applies",
-    type: "Delivery Fee",
-    serving: "Over 15 miles",
     active: "Yes"
   }
 ];
@@ -728,19 +225,19 @@ const orderStatuses = [
 
 const blockers = [
   {
-    title: "Serving size rules need final confirmation",
+    title: "Serving size rules are not confirmed",
     detail:
-      "The current menu includes many individual items and some catering-sized items. Half pans are listed as approximately feeding 8-12 people, but the team still needs confirmation for other items, trays, drinks, desserts, and family meals."
+      "The menu includes prices, but the team still needs to confirm how many people each item serves."
   },
   {
     title: "Owner.com integration is unclear",
     detail:
-      "The team needs to confirm whether Owner.com can export form submissions, customize request fields, or connect to outside tools."
+      "The team needs to confirm whether Owner.com can export form submissions, customize fields, or connect to outside tools."
   },
   {
     title: "Avoiding too many customer emails",
     detail:
-      "The client does not want customers overwhelmed with duplicate emails, so automation must be carefully controlled and should focus on drafts or limited confirmations."
+      "The client does not want customers overwhelmed with duplicate emails, so automation must be carefully controlled."
   },
   {
     title: "Square already handles invoices and payments",
@@ -750,7 +247,7 @@ const blockers = [
   {
     title: "Marketing scope could become too broad",
     detail:
-      "The client strongly emphasized marketing and repeat customers, but the team still needs to satisfy the class requirement for order intake and menu management progress."
+      "The team needs to balance marketing features with the class requirement for order intake progress."
   },
   {
     title: "Text messaging may not be feasible",
@@ -762,7 +259,6 @@ const blockers = [
 const nextSteps = [
   "Finish creating the Airtable base with Customers, Requests/Orders, Menu Items, AI Drafts, and Campaigns tables.",
   "Add sample data for customers, menu items, and catering or meal prep requests.",
-  "Use the updated Classy Clay's menu items in the Menu Items table.",
   "Build the Airtable Interface dashboard for order tracking and menu management.",
   "Create screenshots showing menu management and order intake progress.",
   "Test a sample AI-generated follow-up draft using mock request data.",
