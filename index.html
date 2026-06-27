@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+++++++++++++++++<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Classy Clay's Catering | Progress Update</title>
+  <title>Classy Clay's Catering | Milestone 2 Progress Update</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
     <div>
       <p class="course">IS 4880 Capstone Project</p>
-      <h1>Classy Clay's Catering Progress Update</h1>
+      <h1>Classy Clay's Catering Core Workflow Prototype</h1>
       <p class="subtitle">
-        Catering Connect Solutions: Group 5
+        Catering Connect Solutions: Group 5 | Milestone 2
       </p>
     </div>
   </header>
@@ -21,16 +21,53 @@
     <section class="card">
       <h2>Project Manager Summary</h2>
       <p>
-        This progress update documents the current direction of the Classy Clay's Catering prototype.
-        The project is focused on creating a simple no-code/low-code system that supports request tracking,
-        menu management, AI-assisted follow-up drafts, marketing content support, and repeat customer engagement.
+        This progress update documents the current direction of the Classy Clay's Catering prototype
+        for Milestone 2. The project is focused on creating a simple no-code/low-code system that
+        supports menu management, catering and meal prep order intake, AI-assisted estimate generation,
+        draft invoice/email creation, manual review, and custom order handling.
       </p>
       <p>
-        The prototype is designed to support existing systems like Owner.com and Square instead of replacing them.
-        Square will continue to handle final estimates, invoices, and payments. Our system focuses on the gaps
-        identified during the client interview: better intake details, less back-and-forth communication,
-        customer tracking, and marketing consistency.
+        The main working prototype is being built in Airtable. Airtable stores the customer data,
+        menu items, request/order records, AI draft records, and workflow statuses. GitHub Pages is
+        being used as the public progress and documentation page for the project. The prototype is
+        designed to support existing systems like Owner.com and Square instead of replacing them.
       </p>
+    </section>
+
+    <section class="card">
+      <h2>Prototype Links</h2>
+      <p>
+        The links below connect to the main project resources for the prototype and documentation.
+      </p>
+
+      <ul>
+        <li>
+          <strong>GitHub Repository:</strong>
+          <a href="https://github.com/Portugal2746/cateringconnectsolutions" target="_blank">
+            View Repository
+          </a>
+        </li>
+        <li>
+          <strong>GitHub Pages Progress Site:</strong>
+          <a href="https://portugal2746.github.io/cateringconnectsolutions/" target="_blank">
+            View Progress Site
+          </a>
+        </li>
+        <li>
+          <strong>Airtable Prototype:</strong>
+          <a href="https://airtable.com/appOriB6qVSP03BYh/pagwggnr43dfJBVsQ" target="_blank">
+            View Airtable Prototype
+          </a>
+        </li>
+        <li>
+          <strong>Make.com Automation Scenario:</strong>
+          <span>Link pending or available in team documentation</span>
+        </li>
+        <li>
+          <strong>Interface Mockups/Screenshots:</strong>
+          <span>Screenshot folder pending or available in team documentation</span>
+        </li>
+      </ul>
     </section>
 
     <section class="grid">
@@ -43,17 +80,43 @@
         <p>Core Tables</p>
       </div>
       <div class="metric">
-        <h3>8</h3>
-        <p>Order Statuses</p>
+        <h3>7</h3>
+        <p>Core Workflow Steps</p>
       </div>
       <div class="metric">
-        <h3>6</h3>
-        <p>Known Blockers</p>
+        <h3>2</h3>
+        <p>Required Test Scenarios</p>
       </div>
     </section>
 
     <section class="card">
+      <h2>Milestone 2: Core Workflow Prototype</h2>
+      <p>
+        Milestone 2 focuses on demonstrating the core workflow of the prototype. The system should
+        show menu data in the system, order creation or intake, AI-assisted estimate generation,
+        draft invoice or email generation, manual review before sending, custom/manual review handling,
+        known limitations, and next steps.
+      </p>
+
+      <h3>Milestone 2 Demonstration Includes</h3>
+      <ul>
+        <li>Menu data stored in Airtable</li>
+        <li>Catering and meal prep order intake</li>
+        <li>AI-assisted estimate generation for standard orders</li>
+        <li>Draft invoice or customer email generation</li>
+        <li>Manual owner review before anything is sent</li>
+        <li>Custom/manual review handling for unclear or off-menu orders</li>
+        <li>Known limitations and next steps for future improvement</li>
+      </ul>
+    </section>
+
+    <section class="card">
       <h2>Team Assignments</h2>
+      <p>
+        Each team member is responsible for a specific part of the Milestone 2 prototype based on
+        their assigned role.
+      </p>
+
       <div class="table-wrapper">
         <table id="teamTable">
           <thead>
@@ -82,8 +145,9 @@
     <section class="card">
       <h2>Menu Management Progress</h2>
       <p>
-        The menu management section will allow the owner to view and update menu items, prices, categories,
-        and active/inactive status. This supports future estimate generation while keeping the system simple.
+        The menu management section allows the owner to view and update menu items, prices,
+        categories, serving sizes, and active/inactive status. This menu data is important because
+        the AI estimate depends on accurate menu items and prices.
       </p>
 
       <div class="table-wrapper">
@@ -115,12 +179,181 @@
     </section>
 
     <section class="card">
+      <h2>Core Workflow Process</h2>
+      <p>
+        The Milestone 2 prototype follows a seven-step workflow from order intake to owner review.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Capture the order:</strong>
+          The customer submits a catering or meal prep request with customer information, event type,
+          event date, guest count, menu items, allergies, and special requests.
+        </li>
+        <li>
+          <strong>Classify the order:</strong>
+          The system identifies whether the request is a standard order, missing information, or a custom order.
+        </li>
+        <li>
+          <strong>Route the order:</strong>
+          Standard orders continue to AI-assisted estimate generation. Custom or unclear orders are routed
+          to manual review.
+        </li>
+        <li>
+          <strong>Build the AI prompt:</strong>
+          The system combines the order details with menu items and prices.
+        </li>
+        <li>
+          <strong>Generate the estimate:</strong>
+          AI creates a draft estimate with line items, quantities, prices, subtotal, and total.
+        </li>
+        <li>
+          <strong>Create a draft invoice or email:</strong>
+          The system prepares a customer-facing draft message based on the estimate.
+        </li>
+        <li>
+          <strong>Manual review:</strong>
+          The owner reviews, edits, approves, or rejects the draft before anything is sent to the customer.
+        </li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>AI-Assisted Estimate Generation</h2>
+      <p>
+        For standard catering or meal prep requests, the system is designed to use AI to help generate
+        an estimated cost breakdown. The AI receives the customer request details and the available menu
+        data, then returns a structured draft estimate.
+      </p>
+
+      <h3>Data Sent to AI</h3>
+      <ul>
+        <li>Customer request type</li>
+        <li>Event type</li>
+        <li>Event date</li>
+        <li>Guest count</li>
+        <li>Selected menu items</li>
+        <li>Allergies or dietary restrictions</li>
+        <li>Special requests or customer notes</li>
+        <li>Menu item prices and serving information</li>
+      </ul>
+
+      <h3>Expected AI Output</h3>
+      <ul>
+        <li>Itemized line items</li>
+        <li>Recommended quantities</li>
+        <li>Unit prices</li>
+        <li>Line totals</li>
+        <li>Subtotal</li>
+        <li>Service fee or delivery note, if applicable</li>
+        <li>Grand total estimate</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Draft Invoice or Email Generation</h2>
+      <p>
+        After an AI-assisted estimate is created, the prototype prepares a draft customer email or invoice
+        summary. The draft includes the customer greeting, event details, selected menu items, estimated
+        price breakdown, and next steps.
+      </p>
+
+      <p>
+        The draft is not automatically sent to the customer. It must first be reviewed by the owner.
+        This protects the business from sending incorrect pricing, wrong menu details, or unclear wording.
+      </p>
+
+      <h3>Sample Draft Email Purpose</h3>
+      <p>
+        The draft email helps Classy Clay’s respond faster while still allowing the owner to make the final
+        decision. The owner can edit quantities, pricing, wording, or follow-up questions before approving
+        the message.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Manual Review Before Sending</h2>
+      <p>
+        Manual review is a required part of the workflow. The prototype is designed so that no invoice,
+        estimate, or customer email is sent automatically. The owner must review and approve the draft first.
+      </p>
+
+      <h3>Owner Review Options</h3>
+      <ul>
+        <li>Approve the draft</li>
+        <li>Edit the draft</li>
+        <li>Request more information from the customer</li>
+        <li>Flag the order for custom/manual review</li>
+        <li>Reject the draft if the estimate is not accurate</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Custom and Manual Review Handling</h2>
+      <p>
+        Not every request should receive an AI estimate. Custom, unclear, or off-menu orders should be
+        routed to the owner for manual review. This is important because some catering requests require
+        judgment, direct communication, or special pricing.
+      </p>
+
+      <h3>Orders That Should Be Flagged</h3>
+      <ul>
+        <li>Custom menu requests</li>
+        <li>Off-menu items</li>
+        <li>Missing guest count</li>
+        <li>Missing menu item selections</li>
+        <li>Unusual dietary restrictions</li>
+        <li>Large or complex catering events</li>
+        <li>Requests that need direct owner approval</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Testing Evidence</h2>
+      <p>
+        The prototype should be tested with at least two realistic scenarios: one standard order and one
+        custom or unclear order.
+      </p>
+
+      <h3>Standard Order Test</h3>
+      <p>
+        A standard order should include a clear event type, guest count, selected Classy Clay’s menu items,
+        and no unusual special requests. The expected result is that the system generates a draft estimate
+        and draft email for owner review.
+      </p>
+
+      <h3>Custom Order Test</h3>
+      <p>
+        A custom order should include an off-menu request, vague order details, or a custom menu request.
+        The expected result is that the system skips the automated AI estimate and routes the order to
+        manual review.
+      </p>
+    </section>
+
+    <section class="card">
       <h2>Issues and Blockers</h2>
       <p>
         These blockers need to be resolved before the prototype can be completed.
       </p>
 
       <div id="blockers" class="blocker-list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Known Limitations</h2>
+      <p>
+        The current prototype is still a class project prototype. Some features are working in Airtable,
+        while other parts are still simulated or being tested.
+      </p>
+
+      <ul>
+        <li>AI estimate generation still needs additional testing for accuracy.</li>
+        <li>Email sending is not fully live yet and may be represented as a draft workflow.</li>
+        <li>Make.com automation testing is still in progress.</li>
+        <li>Custom orders require manual review and should not be automatically estimated.</li>
+        <li>Owner.com and Square are not fully replaced by this prototype.</li>
+        <li>Final pricing still requires owner review before being sent to a customer.</li>
+      </ul>
     </section>
 
     <section class="card">
